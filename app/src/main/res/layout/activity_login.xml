@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/vista"
+        android:scaleType="centerCrop"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="213dp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/registroLogin"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="---> Create Account"
+                android:textColor="?attr/colorBackgroundFloating"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageTitulo"
+                android:layout_width="220dp"
+                android:layout_height="149dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/a" />
+
+            <EditText
+                android:id="@+id/usuarioLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff0099cc"
+                android:drawableLeft="@drawable/ic_users"
+                android:hint="confirm user"
+                android:textColor="@android:color/background_light"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="#2196F3"
+                tools:layout_marginTop="15dp" />
+
+            <EditText
+                android:id="@+id/claveLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:backgroundTint="#ff0099cc"
+                android:drawableLeft="@drawable/ic_pass"
+                android:hint="confirm password"
+                android:inputType="textPassword"
+                android:textColor="@android:color/background_light"
+                android:textColorHighlight="@android:color/holo_blue_dark"
+                android:textColorHint="@android:color/background_light"
+                android:textColorLink="@android:color/holo_blue_dark"
+                tools:layout_marginTop="10dp" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Login"
+                android:background="@drawable/button_regis"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="143dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imageButton"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_social"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/faceb" />
+
+                <ImageButton
+                    android:id="@+id/imageButton2"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_social"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/goog" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/button_social"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/twitter" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="91dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnConec"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/button_conex"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/bea" />
+
+                <ImageButton
+                    android:id="@+id/btnBlu"
+                    android:layout_width="40dp"
+                    android:layout_height="35dp"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/button_conex"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/be1" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
