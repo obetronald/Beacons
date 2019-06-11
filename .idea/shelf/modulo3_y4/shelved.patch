@@ -1,0 +1,12 @@
+Index: app/src/main/java/com/example/obet/beacons/Obet.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/src/main/java/com/example/obet/beacons/Obet.java	(date 1560218456164)
++++ app/src/main/java/com/example/obet/beacons/Obet.java	(date 1560218456164)
+@@ -0,0 +1,4 @@
++package com.example.obet.beacons;
++
++public class Obet {
++}
