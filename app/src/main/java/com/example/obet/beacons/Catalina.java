@@ -11,8 +11,6 @@ import android.widget.Button;
 
 public class Catalina extends AppCompatActivity {
 
-    //vamos a cargar url
-    String url= "https://www.santacatalina.org.pe/index.php/es/";
 
 
     @Override
@@ -20,17 +18,6 @@ public class Catalina extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_catalina);
 
-        WebView web = (WebView) findViewById(R.id.btncatali);
-        web.setWebViewClient(new Catalina.MyWebViewClient());
-        WebSettings settings = web.getSettings();
-        settings.setJavaScriptEnabled(true);
-        web.loadUrl(url);
 
-    }
-    private class MyWebViewClient extends WebViewClient{
-        public boolean shouldOverrideUrlLoading(WebView view, String url){
-            view.loadUrl(url);
-            return true;
-        }
     }
 }

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 
 import com.android.volley.RequestQueue;
 import com.android.volley.Response;
@@ -26,6 +27,8 @@ public class Registro extends AppCompatActivity {
         final EditText correoT     = (EditText)findViewById(R.id.correoRegistro);
         final EditText usuarioT    = (EditText)findViewById(R.id.usuarioRegistro);
         final EditText claveT      = (EditText)findViewById(R.id.claveRegistro);
+        final RadioButton R1T      = (RadioButton) findViewById(R.id.radioButton);
+        final RadioButton R2T      = (RadioButton) findViewById(R.id.radioButton2);
         Button btnRegistro = (Button)findViewById(R.id.btnRegistro);
         btnRegistro.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +37,10 @@ public class Registro extends AppCompatActivity {
                  String apellido   = apellidoT.getText().toString() ;
                  String correo     = correoT.getText().toString() ;
                  String usuario    = usuarioT.getText().toString() ;
-                 String clave      = claveT.getText().toString() ;
+                 String clave      = claveT.getText().toString();
+                 String visitante      = R1T.getText().toString();
+                 String visitante2      = R2T.getText().toString();
+
                 Response.Listener<String> respuesta = new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
@@ -60,7 +66,7 @@ public class Registro extends AppCompatActivity {
                     }
                 };
 
-                RegistroRequest r = new RegistroRequest(nombre,apellido,correo,usuario,clave,respuesta);
+                RegistroRequest r = new RegistroRequest(nombre,apellido,correo,usuario,clave,visitante,respuesta);
                 RequestQueue cola = Volley.newRequestQueue(Registro.this);
                 cola.add(r);
             }
