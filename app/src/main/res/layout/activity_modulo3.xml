@@ -5,89 +5,92 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#041720"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingBottom="10dp"
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
-    <LinearLayout
+        android:layout_height="match_parent">
 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        <LinearLayout
 
-        <TextView
-            android:layout_width="230dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
-            android:gravity="center"
-            android:text="choose your place of visit"
-            android:textColor="@android:color/background_light"
-            android:textSize="18sp"
-            android:textStyle="italic" />
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/btnSancat"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/mon0" />
+            <TextView
+                android:layout_width="230dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="122dp"
+                android:gravity="center"
+                android:text="choose your place of visit"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp"
+                android:textStyle="italic" />
 
-        <Button
-            android:id="@+id/btnCated"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/catedral" />
+            <Button
+                android:id="@+id/btnSancat"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/mon0" />
 
-        <Button
-            android:id="@+id/btnMor"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/moral" />
+            <Button
+                android:id="@+id/btnCated"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/catedral" />
 
-        <Button
-            android:id="@+id/btnMuseoj"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/juanita0" />
+            <Button
+                android:id="@+id/btnMor"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/moral" />
 
-        <Button
-            android:id="@+id/btnMerc"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/merced" />
+            <Button
+                android:id="@+id/btnMuseoj"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/juanita0" />
 
-
-        <Button
-            android:id="@+id/btnTmb"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/tambos" />
-
-        <Button
-            android:id="@+id/btnComp"
-            android:layout_width="270dp"
-            android:layout_height="160dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/compania" />
+            <Button
+                android:id="@+id/btnMerc"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/merced" />
 
 
-    </LinearLayout>
+            <Button
+                android:id="@+id/btnTmb"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/tambos" />
+
+            <Button
+                android:id="@+id/btnComp"
+                android:layout_width="270dp"
+                android:layout_height="160dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/compania" />
+
+
+        </LinearLayout>
 
     </ScrollView>
 

@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 public class Modulo3 extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -26,7 +27,30 @@ public class Modulo3 extends AppCompatActivity
         Button Sant =(Button) findViewById(R.id.btnSancat);
         Button Cate =(Button) findViewById(R.id.btnCated);
         Button Morall =(Button) findViewById(R.id.btnMor);
+        ImageButton busque =(ImageButton) findViewById(R.id.imageBusquedab);
+        ImageButton conex =(ImageButton) findViewById(R.id.imageConexionb);
 
+
+
+        busque.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View arg0) {
+                Intent bus = new Intent(Modulo3.this, Conexion.class);
+                Modulo3.this.startActivity(bus);
+
+            }
+
+        });
+
+        conex.setOnClickListener(new View.OnClickListener(){
+
+            public void onClick(View arg0) {
+                Intent con = new Intent(Modulo3.this, Beaconexion.class);
+                Modulo3.this.startActivity(con);
+
+            }
+
+        });
 
         Sant.setOnClickListener(new View.OnClickListener(){
 

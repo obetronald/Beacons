@@ -28,7 +28,7 @@ public class Login extends AppCompatActivity {
 
         TextView registro = (TextView)findViewById(R.id.registroLogin);
         Button btnLogin = (Button)findViewById(R.id.btnLogin);
-        ImageButton btnConec = (ImageButton) findViewById(R.id.btnConec);
+
         ImageButton btnBlu = (ImageButton)findViewById(R.id.btnBlu);
 
         final EditText usuarioT = (EditText)findViewById(R.id.usuarioLogin);
@@ -42,15 +42,7 @@ public class Login extends AppCompatActivity {
             }
 
         });
-        btnConec.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent btnconec = new Intent(Login.this, Conexion.class);
-                Login.this.startActivity(btnconec);
-                //finish();
-
-            }
-        });
+       
         btnBlu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
