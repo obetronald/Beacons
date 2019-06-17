@@ -4,29 +4,83 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCFAFA"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingStart="@dimen/activity_horizontal_margin"
     android:orientation="vertical"
-    android:paddingBottom="16dp"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
     android:paddingTop="16dp"
     tools:context=".Catalina">
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/textView2"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Formulario Registro"
-            android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+            android:orientation="vertical">
+
+
+        <ahmed.easyslider.EasySlider
+
+            android:id="@+id/sliderId"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/button_regis" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:text="El Monasterio Santa Catalina"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Descripcion Historica"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Museo"
+            android:textColor="@android:color/tertiary_text_light"
+            android:textSize="14sp"
+            android:textStyle="bold|italic" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Fundado en 1580 el convento de Santa Catalina es una pequeña ciudadela construida en barro y sillar con magníficas pinturas al fresco
+que ocupan un área de 20 mil metros cuadrados y se divide en cuatro barrios, tratando de emular la distribución urbana arequipeña de los primeros años de la Colonia."
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="Direccion                                   Horario Atencion"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:gravity="center"
             android:orientation="horizontal">
 
@@ -37,112 +91,271 @@
 
                 <TextView
                     android:id="@+id/textView5"
-                    android:layout_width="76dp"
+                    android:layout_width="114dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:text="Dato 1" />
+                    android:text="Calle Santa Catalina 301 AQP."
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
 
-                <TextView
-                    android:id="@+id/textView4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="23dp"
-                    android:text="Dato 2" />
+            </LinearLayout>
 
-                <TextView
-                    android:id="@+id/textView3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
-                    android:text=" Dato 3" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/textView6"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
-                    android:text=" Dato 3" />
+                    android:layout_marginTop="2dp"
+                    android:text="         "
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    tools:visibility="invisible" />
 
-                <TextView
-                    android:id="@+id/textView7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="28dp"
-                    android:text=" Dato 3" />
             </LinearLayout>
 
             <LinearLayout
-                android:layout_width="266dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="2dp"
+                    android:text="Lunes Miercoles
+Viernes Sabado Domingo de
+8:00 a.m. a 5:00 p.m"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <EditText
-                    android:id="@+id/editText3"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="114dp"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Dato 1" />
+                    android:layout_marginTop="2dp"
+                    android:text=""
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="11dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    tools:visibility="invisible" />
 
-                <EditText
-                    android:id="@+id/editText2"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Dato 2" />
 
-                <EditText
-                    android:id="@+id/editText"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Dato 3" />
-                <EditText
-                    android:id="@+id/editText4"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Dato 3" />
+            </LinearLayout>
 
-                <EditText
-                    android:id="@+id/editText5"
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView16"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:inputType="textPersonName"
-                    android:text="Dato 3" />
+                    android:layout_marginTop="2dp"
+                    android:text="         "
+                    android:textColor="@android:color/holo_blue_dark"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:typeface="normal"
+                    tools:visibility="invisible" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/fab_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="27dp"
+                    android:layout_marginTop="2dp"
+                    android:baselineAligned="false"
+                    android:text="Martes y Jueves de
+8:00 a.m. a 5:00 p.m"
+                    android:textColor="@android:color/tertiary_text_light"
+                    android:textSize="10dp"
+                    android:textStyle="bold"
+                    android:typeface="normal" />
+
             </LinearLayout>
         </LinearLayout>
-    </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="horizontal"
-        android:layout_marginTop="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="horizontal">
 
-        <RadioButton
-            android:id="@+id/radioButton2"
-            android:layout_width="102dp"
-            android:layout_height="wrap_content"
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
 
-            android:text="Turista" />
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:baselineAligned="false"
+                        android:text="Precio"
+                        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:visibility="visible" />
 
-        <RadioButton
-            android:id="@+id/radioButton"
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text="Entrada General
+S/. 40.00"
+                        android:textColor="@android:color/tertiary_text_light"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView22"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:text="Universitario: s/.12.00"
+                        android:textColor="@android:color/tertiary_text_light"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorPrimary"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="57dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:text=""
+                        android:textColor="@android:color/holo_blue_dark"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:visibility="invisible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/textView24"
+                        android:layout_width="match_parent"
+                        android:layout_height="17dp"
+                        android:layout_marginTop="2dp"
+                        android:text="Promoc.fin. mes
+S/.10.00"
+                        android:textColor="@android:color/tertiary_text_light"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        tools:visibility="visible" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="101dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/fab_margin"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:text="Est. Escolares: s/. 6.00"
+                        android:textColor="@android:color/tertiary_text_light"
+                        android:textSize="10dp"
+                        android:textStyle="bold"
+                        android:typeface="normal" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Buscar" />
 
-            android:text="Noturista" />
-    </LinearLayout>
-
-
-
-
-
+        </LinearLayout>
+    </ScrollView>
 
 </LinearLayout>

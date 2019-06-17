@@ -24,7 +24,7 @@
         <activity
             android:name=".Modulo3"
             android:label="@string/title_activity_modulo3"
-            android:theme="@style/NoActionBar"></activity>
+            android:theme="@style/NoActionBar" />
         <activity android:name=".Plaza" />
         <activity android:name=".Moral" />
         <activity android:name=".Catalina" />

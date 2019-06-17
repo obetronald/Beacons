@@ -35,7 +35,7 @@
             android:layout_height="160dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:background="@drawable/m" />
+            android:background="@drawable/mon0" />
 
         <Button
             android:id="@+id/btnCated"
@@ -52,6 +52,14 @@
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
             android:background="@drawable/moral" />
+
+        <Button
+            android:id="@+id/btnMuseoj"
+            android:layout_width="270dp"
+            android:layout_height="160dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/juanita0" />
 
         <Button
             android:id="@+id/btnMerc"

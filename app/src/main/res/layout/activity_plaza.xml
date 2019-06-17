@@ -4,13 +4,201 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FCFAFA"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingTop="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
     tools:context=".Plaza">
 
-    <WebView
-        android:id="@+id/btnCatdr"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ahmed.easyslider.EasySlider
 
-    </WebView>
+        android:id="@+id/sliderId"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@drawable/button_regis" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Catedral Arequipa"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descripcion Historica"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Museo"
+        android:textColor="@android:color/tertiary_text_light"
+        android:textSize="14sp"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Fundado en 1580 el convento de Santa Catalina es una pequeña ciudadela construida en barro y sillar con magníficas pinturas al fresco
+ que ocupan un área de 20 mil metros cuadrados y se divide en cuatro barrios, tratando de emular la distribución urbana arequipeña de los primeros años de la Colonia."
+        android:textAlignment="viewStart"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:typeface="normal" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Direccion                                   Horario Atencion"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="Calle Santa Catalina 301"
+                android:textSize="11dp"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="         "
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="match_parent"
+                android:layout_height="41dp"
+                android:layout_marginTop="2dp"
+                android:text="Lunes Miercoles
+Viernes Sabado Domingo de
+8:00 a.m. a 5:00 p.m"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="114dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text=""
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="11dp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:visibility="invisible" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="         "
+                android:textColor="@android:color/holo_blue_dark"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:typeface="normal"
+                tools:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/fab_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="match_parent"
+                android:layout_height="27dp"
+                android:layout_marginTop="2dp"
+                android:text="Martes y Jueves de
+8:00 a.m. a 5:00 p.m"
+                android:textColor="@android:color/tertiary_text_light"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:typeface="normal" />
+
+
+        </LinearLayout>
+    </LinearLayout>
 
 </LinearLayout>
