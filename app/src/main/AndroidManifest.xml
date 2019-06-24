@@ -23,7 +23,7 @@
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
             android:name=".Modulo3"
-            android:label="@string/title_activity_modulo3"
+            android:label="Ronald Obet"
             android:theme="@style/NoActionBar" />
         <activity android:name=".Plaza" />
         <activity android:name=".Moral" />

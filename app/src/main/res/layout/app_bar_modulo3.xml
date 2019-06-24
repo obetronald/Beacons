@@ -38,7 +38,7 @@
             app:srcCompat="@drawable/conex"
             android:background="@drawable/button_busqueda"
             android:scaleType="fitCenter"
-            android:textColor="@android:color/background_light" />
+             />
 
         <ImageButton
             android:id="@+id/imageConexionb"
@@ -48,8 +48,7 @@
             android:background="@drawable/button_busqueda"
             android:foreground="@drawable/ic_cone"
             android:scaleType="fitCenter"
-
-            android:textColor="@android:color/background_light" />
+ />
 
         <ImageButton
             android:id="@+id/imageBusquedab"
